@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/HomeFragment"
-        android:name="com.example.techiebutlertest.HomeFragment"
+        android:name="com.example.techiebutlertest.presentation.home.HomeFragment"
         android:label="@string/home_fragment_label"
         tools:layout="@layout/fragment_home">
         <argument
@@ -29,12 +29,12 @@
             android:id="@+id/action_HomeFragment_to_DetailFragment"
             app:destination="@id/DetailFragment"
             app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
+            app:exitAnim="@anim/fade_out"
             app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/DetailFragment"
-        android:name="com.example.techiebutlertest.DetailFragment"
+        android:name="com.example.techiebutlertest.presentation.detail.DetailFragment"
         android:label="@string/detail_fragment_label"
         tools:layout="@layout/fragment_detail">
     </fragment>

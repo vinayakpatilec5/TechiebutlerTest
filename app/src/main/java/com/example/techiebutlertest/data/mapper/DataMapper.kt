@@ -4,5 +4,5 @@ import com.example.techiebutlertest.data.remote.PostData
 import com.example.techiebutlertest.domain.entities.Post
 
 fun PostData.toDomain(): Post {
-    return Post(id, userId, title, body)
+    return Post(userId, id, title, body)
 }

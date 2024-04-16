@@ -1,4 +1,4 @@
-package com.example.techiebutlertest.presentation
+package com.example.techiebutlertest.presentation.home.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -47,6 +47,7 @@ class PostAdapter(
         fun setData(post: PostDisplayData) {
             binding.title.text = post.title
             binding.body.text = post.body
+            binding.postId.text = "${post.id}"
         }
     }
 

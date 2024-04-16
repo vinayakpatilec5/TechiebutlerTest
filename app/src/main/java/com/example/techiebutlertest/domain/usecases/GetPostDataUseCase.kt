@@ -13,6 +13,7 @@ import com.example.techiebutlertest.domain.util.makeFirstLetterCapital
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject
+
 /*
     Here adding some Extra fake computation on data to make first letter capital of each word
     + adding first char as bold styling for post body
@@ -22,7 +23,7 @@ class GetPostDataUseCase @Inject constructor(private val repository: HomeReposit
         return repository.getPostData(pageLimit).map {
             it.map { post ->
                 PostDisplayData(
-                    1,
+                    post.userId,
                     post.id,
                     makeFirstLetterCapital(post.title),
                     getSpanData(makeFirstLetterCapital(post.body))

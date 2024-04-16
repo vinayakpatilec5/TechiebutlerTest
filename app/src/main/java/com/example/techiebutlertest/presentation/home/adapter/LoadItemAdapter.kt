@@ -1,4 +1,4 @@
-package com.example.techiebutlertest.presentation
+package com.example.techiebutlertest.presentation.home.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

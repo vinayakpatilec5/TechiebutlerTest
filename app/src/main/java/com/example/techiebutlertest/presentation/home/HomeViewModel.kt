@@ -1,4 +1,4 @@
-package com.example.techiebutlertest
+package com.example.techiebutlertest.presentation.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

@@ -5,9 +5,24 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:padding="@dimen/small_margin"
+        android:foregroundGravity="center"
         android:layout_marginStart="@dimen/medium_margin"
         android:layout_marginEnd="@dimen/medium_margin"
         android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/post_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_text_size"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:padding="@dimen/medium_margin"
+            android:background="@drawable/bg_round_border"
+            android:fontFamily="@font/roboto"
+            android:textFontWeight="900"
+            android:textColor="@color/text_solid_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/title"
@@ -18,9 +33,10 @@
             android:text=""
             android:fontFamily="@font/roboto"
             android:textFontWeight="900"
+            android:layout_marginStart="@dimen/semi_medium_margin"
             android:textColor="@color/text_solid_color"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/post_id"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -34,8 +50,9 @@
             android:ellipsize="end"
             android:fontFamily="@font/roboto"
             android:textFontWeight="400"
+            android:layout_marginStart="@dimen/semi_medium_margin"
             android:textColor="@color/text_solid_color"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/post_id"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/title" />
         <View

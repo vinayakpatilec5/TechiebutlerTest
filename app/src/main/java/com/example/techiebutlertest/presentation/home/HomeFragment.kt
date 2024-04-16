@@ -1,4 +1,4 @@
-package com.example.techiebutlertest
+package com.example.techiebutlertest.presentation.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,12 +13,14 @@ import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import androidx.paging.LoadState
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.techiebutlertest.presentation.detail.DetailFragment
+import com.example.techiebutlertest.R
 import com.example.techiebutlertest.databinding.FragmentHomeBinding
 import com.example.techiebutlertest.domain.entities.PostDisplayData
-import com.example.techiebutlertest.presentation.ItemClickCallBack
-import com.example.techiebutlertest.presentation.LoadItemAdapter
-import com.example.techiebutlertest.presentation.PostAdapter
-import com.example.techiebutlertest.presentation.PostComparator
+import com.example.techiebutlertest.presentation.home.adapter.ItemClickCallBack
+import com.example.techiebutlertest.presentation.home.adapter.LoadItemAdapter
+import com.example.techiebutlertest.presentation.home.adapter.PostAdapter
+import com.example.techiebutlertest.presentation.home.adapter.PostComparator
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch

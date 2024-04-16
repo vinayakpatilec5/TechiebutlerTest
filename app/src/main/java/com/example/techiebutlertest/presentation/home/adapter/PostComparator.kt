@@ -1,4 +1,4 @@
-package com.example.techiebutlertest.presentation
+package com.example.techiebutlertest.presentation.home.adapter
 
 import androidx.recyclerview.widget.DiffUtil
 import com.example.techiebutlertest.domain.entities.PostDisplayData
