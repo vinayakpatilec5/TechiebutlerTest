@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TechiebutlerTest</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="home_fragment_label">Home Fragment</string>
+    <string name="detail_fragment_label">Second Fragment</string>
+
+    <string name="retry_text">RETRY</string>
+    <string name="something_wrong_text">Something went wrong</string>
+</resources>
